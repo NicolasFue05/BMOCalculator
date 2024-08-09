@@ -1,4 +1,4 @@
-# Clon de la Calculadora del iPhone
+# BMO (Adventure Time) Calculator
 
 Este repositorio contiene una réplica de la calculadora del iPhone implementada en HTML, CSS y JavaScript. El proyecto tiene como objetivo replicar la apariencia y funcionalidad de la calculadora nativa del iPhone, proporcionando una herramienta educativa para aprender y practicar habilidades de desarrollo frontend.
 
