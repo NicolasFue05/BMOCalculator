@@ -1,103 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
 body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
 }
 
-@media (max-width:390px) {
+.calculator {
+    width: 300px;
+    background-color: #4dc2c2;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
 
-    * {
-        margin: 5px;
-        background-color: black;
-    }
-
-    .calculator {
-        background-color: black;
-        width: 100%;
-        height: 100vh;
-        color: #fff;
-    }
-
-    #show-operation {
-        width: 94%;
-        height: 25vh;
-        display: flex;
-        justify-content: flex-end;
-        align-items: end;
-        font-size: 5rem;
-        font-weight: 300;
-
-    }
-
-    .digits-numbers {
-        display: grid;
-        grid-template-columns: repeat(4,5.7rem);
-        grid-template-rows: repeat(5,1fr);
-        width: 98%;
-        height: 70vh;
-        font-size: 2rem;
-        font-weight: 400;
-    }
-
-    .button{
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        border-radius: 50%;
-        height: 90px;
-    }
-
-    #number0 {
-        display: flex;
-        align-items: flex-start;
-        padding-left: 30px;
-        box-sizing: border-box;
-        grid-column: span 2;
-        border-radius: 50px;
-        background-color: rgb(34, 34, 34);
-    }
-
-    #number1,
-    #number2,
-    #number3,
-    #number4,
-    #number5,
-    #number6,
-    #number7,
-    #number8,
-    #number9,
-    #digit8 {
-        background-color: rgb(34, 34, 34);
-    }
-
-    #digit1,
-    #digit2,
-    #digit3 {
-        background-color: rgb(177, 175, 175);
-        color: #000;
-    }
+.display {
+    background-color: #9be3e3;
+    height: 60px;
+    border-radius: 10px;
+    text-align: right;
+    padding: 15px;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 
-    #digit4,
-    #digit5,
-    #digit6,
-    #digit7,
-    #equal {
-        background-color: rgb(228, 130, 2);
-    }
 
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background-color: #ffd966;
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:active {
+    background-color: #e6c155;
+}
+
+.operator {
+    background-color: #80d296;
+}
+
+.operator.equal {
+    background-color: #ff6666;
+    color: white;
 }
