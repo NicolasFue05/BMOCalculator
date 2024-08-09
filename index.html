@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,41 +7,36 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="name-container">
+
+    </div>
+
     <div class="calculator">
-        <div id="show-operation">0</div>
-        <div class="digits-numbers">
-            
-            <div id="digit1" class="button">AC</div>
-            <div id="digit2" class="button">+/-</div>
-            <div id="digit3" class="button">%</div>
-            <div id="digit4" class="button">÷</div>
-
-            
-            <div id="number7"  class="button">7</div>
-            <div id="number8"  class="button">8</div>
-            <div id="number9"  class="button">9</div>
-            <div id="digit5"  class="button">x</div>
-
-            
-            <div id="number4"  class="button">4</div>
-            <div id="number5"  class="button">5</div>
-            <div id="number6"  class="button">6</div>
-            <div id="digit6"  class="button">-</div>
-
-            
-            <div id="number1"  class="button">1</div>
-            <div id="number2"  class="button">2</div>
-            <div id="number3"  class="button">3</div>
-            <div id="digit7"  class="button">+</div>
-
-
-            <div id="number0" class="button">0</div>
-            <div id="digit8" class="button">.</div>
-            <div id="equal" class="button">=</div>
+        <input type="text" class="display" value="0" readonly>
+        <div class="buttons">
+            <button class="btn operator" onclick="clearDisplay('')">AC</button>
+            <button class="btn operator">+/-</button>
+            <button class="btn operator">%</button>
+            <button class="btn operator">÷</button>
+            <button class="btn" onclick="displayNumbers(1)">1</button>
+            <button class="btn" onclick="displayNumbers(2)">2</button>
+            <button class="btn" onclick="displayNumbers(3)">3</button>
+            <button class="btn operator" onclick="displayNumbers('X')">x</button>
+            <button class="btn" onclick="displayNumbers(4)">4</button>
+            <button class="btn" onclick="displayNumbers(5)">5</button>
+            <button class="btn" onclick="displayNumbers(6)">6</button>
+            <button class="btn operator" onclick="displayNumbers('-')">-</button>
+            <button class="btn" onclick="displayNumbers(7)">7</button>
+            <button class="btn" onclick="displayNumbers(8)">8</button>
+            <button class="btn" onclick="displayNumbers(9)">9</button>
+            <button class="btn operator" onclick="displayNumbers('+')">+</button>
+            <button class="btn" onclick="displayNumbers(0)">0</button>
+            <button class="btn" onclick="displayNumbers('00')">00</button>
+            <button class="btn" onclick="displayNumbers('.')">.</button>
+            <button class="btn operator equal" onclick="calculate()">=</button>
         </div>
     </div>
 
-    <script src="calculator.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
